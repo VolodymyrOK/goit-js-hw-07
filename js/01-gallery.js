@@ -32,7 +32,7 @@ function onClickGallery(event) {
       onClose: () => true,
     }
   );
-  const instShow = instance.show();
+  instance.show();
 
   window.addEventListener("keydown", handlerEscModal);
 
