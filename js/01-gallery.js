@@ -28,8 +28,8 @@ function onClickGallery(event) {
   const instance = basicLightbox.create(
     `<img src="${event.target.dataset.source}">`,
     {
-      onShow: () => window.addEventListener("keydown", handlerEscModal),
-      onClose: () => window.removeEventListener("keydown", handlerEscModal),
+      onShow: () => document.addEventListener("keydown", handlerEscModal),
+      onClose: () => document.removeEventListener("keydown", handlerEscModal),
     }
   );
   instance.show();
